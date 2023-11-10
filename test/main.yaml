@@ -1,3 +1,7 @@
 databaseChangeLog:
   - include:
       file: example-changelog.sql
+  - include:
+      file: bomen_2.sql
+  - include:
+      file: views.sql
