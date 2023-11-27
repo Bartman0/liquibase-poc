@@ -5,6 +5,7 @@
 use catalog dpd1_dev;
 
 create schema if not exists bomen_2;
+-- rollback empty
 
 
 --changeset richard.kooijman:2 labels:bomen_2,ADO_12345
@@ -53,6 +54,7 @@ CREATE TABLE if not exists bomen_2.stamgegevens_1_1 (
 	PRIMARY KEY (id)
 )
 ;
+-- rollback empty
 
 
 --changeset richard.kooijman:3 labels:bomen_2,ADO_12345
@@ -73,4 +75,4 @@ CREATE TABLE if not exists bomen_2.aanvulling_1_0 (
 	PRIMARY KEY (identificatie)
 )
 ;
-
+-- rollback empty

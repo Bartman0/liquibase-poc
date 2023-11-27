@@ -9,6 +9,7 @@ CREATE OR REPLACE VIEW richardkooijman.stamgegevens_1_1 AS SELECT id, gbd_buurt_
 FROM bomen_2.stamgegevens_1_1
 WHERE is_account_group_member('OPENBAAR')
 ;
+-- rollback empty
 
 
 --changeset richard.kooijman:5 labels:bomen_2,views,ADO_12345
@@ -20,4 +21,4 @@ CREATE OR REPLACE VIEW richardkooijman.aanvulling_1_0 AS SELECT identificatie, r
 FROM bomen_2.aanvulling_1_0
 WHERE is_account_group_member('OPENBAAR')
 ;
-
+-- rollback empty

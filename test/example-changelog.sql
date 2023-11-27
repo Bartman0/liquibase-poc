@@ -11,6 +11,14 @@ create table richardkooijman.person (
 )
 --rollback DROP TABLE person;
 
+--changeset your.name:A labels:example-label context:example-context
+--comment: example comment
+ALTER TABLE richardkooijman.person SET TBLPROPERTIES (
+   'delta.columnMapping.mode' = 'name',
+   'delta.minReaderVersion' = '2',
+   'delta.minWriterVersion' = '5')
+--rollback empty
+
 --changeset your.name:2 labels:example-label context:example-context
 --comment: example comment
 create table richardkooijman.company (

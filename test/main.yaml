@@ -5,3 +5,7 @@ databaseChangeLog:
       file: bomen_2.sql
   - include:
       file: views.sql
+  - include:
+      file: tailored-views.sql
+  - include:
+      file: testje.sql
