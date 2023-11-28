@@ -8,4 +8,4 @@ databaseChangeLog:
   - include:
       file: tailored-views.sql
   - include:
-      file: testje.sql
+      file: feature-12345-testje.sql
